@@ -1,0 +1,136 @@
+*{
+margin: 0;
+padding: 0;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 500;
+box-sizing: border-box;
+}
+
+.bg {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(215deg, rgb(22, 146, 63), rgba(94, 219, 115, 0.4));
+    padding: 10px;
+}
+.list-head {
+    width: 100%;
+    max-width: 800px;
+    background:linear-gradient(215deg, #cafaf4, #c3cfcc);
+    margin: 40px auto 20px;
+    padding: 20px 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.list-head h2 {
+    color: #101b22;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background: rgb(253, 253, 253);
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    margin: 10px auto 10px;
+}
+
+input:focus::-webkit-input-placeholder {color:transparent;}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: #2b786f;
+    color:rgb(238, 235, 235);
+    font-weight: 500;
+    font-size: 32px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(18, 195, 177);
+    transition: 0.3s;
+} 
+
+ul {
+    /* visibility: hidden; */
+    width: 100%;
+    list-style-type: none;
+    max-width: 800px;
+    background:linear-gradient(215deg, #ffffff, #d7d8d8);
+    margin: 30px auto 10px;
+    padding: 20px 40px 20px;
+    border-radius: 10px;
+}
+
+[contenteditable] { outline: 0px solid transparent;} 
+
+ul li {
+    list-style: none;
+    font-size: 22px;
+    overflow-wrap: break-word;
+    color:rgb(59, 98, 98);
+    padding: 18px 20px 20px 70px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    background-image: url(Assets/uncheck.png);
+    background-size: cover;
+    top: 10px;
+    left: -5px;
+    cursor: pointer;
+}
+
+ul li.check::before {
+    background-image: url(Assets/star.png);
+    cursor: pointer;
+    height: 44px;
+    width: 44px;
+    margin: -1px;
+    position: absolute;
+}
+
+ul li.check {
+    color: #000000;
+}
+
+ul li span {
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    height: 50px;
+    width: 48px;
+    margin: -12px;
+    font-size: 50px;
+    padding-left: 8px;
+    color: #ac204c;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    background-color: #e8e9ea;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
